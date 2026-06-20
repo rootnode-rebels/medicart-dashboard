@@ -81,6 +81,7 @@ app.use('/api/medicines', require('./routes/medicines'));
 app.use('/api/invoices', require('./routes/invoices'));
 app.use('/api/customers', require('./routes/customers'));
 app.use('/api/staff', require('./routes/staff'));
+app.use('/api/ai', require('./routes/ai'));
 
 // ── Shop Config Endpoint ───────────────────────────────────
 app.get('/api/shop-config', (req, res) => {

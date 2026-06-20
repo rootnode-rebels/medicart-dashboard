@@ -179,6 +179,19 @@ function initApp(pageTitle, pageSubtitle) {
     updateClock();
     setInterval(updateClock, 30000); // update every 30s instead of 1s for perf
   }
+
+  // Inject AI Chatbot Globally
+  if (!document.getElementById('ai-chatbot-styles')) {
+    const aiCss = document.createElement('link');
+    aiCss.id = 'ai-chatbot-styles';
+    aiCss.rel = 'stylesheet';
+    aiCss.href = '/css/ai-chatbot.css';
+    document.head.appendChild(aiCss);
+
+    const aiScript = document.createElement('script');
+    aiScript.src = '/js/ai-chatbot.js';
+    document.body.appendChild(aiScript);
+  }
 }
 
 /**
