@@ -1,52 +1,9 @@
 {
+  "cleanUrls": true,
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/api/index.js"
-    },
-    {
-      "source": "/billing",
-      "destination": "/public/billing.html"
-    },
-    {
-      "source": "/login",
-      "destination": "/public/login.html"
-    },
-    {
-      "source": "/signup",
-      "destination": "/public/signup.html"
-    },
-    {
-      "source": "/medicines",
-      "destination": "/public/medicines.html"
-    },
-    {
-      "source": "/inventory",
-      "destination": "/public/inventory.html"
-    },
-    {
-      "source": "/customers",
-      "destination": "/public/customers.html"
-    },
-    {
-      "source": "/reports",
-      "destination": "/public/reports.html"
-    },
-    {
-      "source": "/settings",
-      "destination": "/public/settings.html"
-    },
-    {
-      "source": "/staff",
-      "destination": "/public/staff.html"
-    },
-    {
-      "source": "/",
-      "destination": "/public/index.html"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/public/$1"
+      "destination": "/api"
     }
   ]
 }
